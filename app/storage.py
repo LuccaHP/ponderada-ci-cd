@@ -6,6 +6,8 @@ As operações são puras o suficiente para gerar unitários rápidos.
 
 from __future__ import annotations
 
+import os  # exp: import não utilizado de propósito (falha de lint F401)
+
 from app.models import Todo, TodoIn
 
 
