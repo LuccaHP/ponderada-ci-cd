@@ -68,13 +68,13 @@ diferentes — a variação fica registrada nos próprios dados: `test_count`, d
 - **IDs reais dos workflows:** todos na tabela acima (de `26890458786` a `26891056200`).
 - **Commits reais:** SHAs na tabela; histórico em
   <https://github.com/LuccaHP/ponderada-ci-cd/commits/main>.
-- **Prints:** coloque imagens em [prints/](prints/) (ex.: visão geral do Actions, uma run
-  verde, a run de falha de lint, detalhe de timing dos steps). Os links acima já servem
-  como evidência verificável de cada execução.
+- **Print das execuções reais:** as 14 runs do experimento na aba *Actions* (note os ✅
+  sucessos e os ❌ das runs #2 *teste falhando* e #6 *falha de lint*):
 
-```
-![Visão geral das execuções](prints/actions-overview.png)
-```
+![Visão geral das 14 execuções reais no GitHub Actions](prints/actions-overview.png)
+
+Os links da tabela na §3 levam a cada run individual; o print acima e esses links são a
+evidência verificável de que as execuções são reais.
 
 ## 5. Gráficos
 
