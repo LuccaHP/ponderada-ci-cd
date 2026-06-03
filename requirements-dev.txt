@@ -1,0 +1,16 @@
+# Dependências de desenvolvimento/CI (testes, lint, coleta e visualização).
+-r requirements.txt
+
+# Testes
+pytest==8.3.4
+pytest-cov==6.0.0
+
+# Lint / análise estática
+ruff==0.8.6
+
+# Coleta de métricas (script Python)
+requests==2.32.3
+
+# Visualização
+pandas==2.2.3
+matplotlib==3.10.0

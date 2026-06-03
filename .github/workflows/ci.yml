@@ -1,0 +1,131 @@
+name: CI
+
+# Gatilhos:
+#  - push / pull_request: rodam o pipeline a cada commit (variações de CÓDIGO).
+#  - workflow_dispatch: permite variar a CONFIGURAÇÃO sem editar código
+#    (cache ligado/desligado, inflar nº de testes, introduzir teste lento).
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      use_cache:
+        description: "Usar cache de dependências do pip?"
+        type: choice
+        options: ["true", "false"]
+        default: "true"
+      bulk_tests:
+        description: "Quantidade de testes triviais extras (infla a contagem)"
+        type: string
+        default: "0"
+      slow_test_seconds:
+        description: "Duração de um teste artificialmente lento (segundos; 0 = desativado)"
+        type: string
+        default: "0"
+
+permissions:
+  contents: read
+
+# NÃO cancelar execuções em andamento: queremos preservar todas as runs do experimento.
+concurrency:
+  group: ci-${{ github.ref }}-${{ github.run_id }}
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: "3.12"
+  USE_CACHE: ${{ github.event.inputs.use_cache || 'true' }}
+  BULK_TESTS: ${{ github.event.inputs.bulk_tests || '0' }}
+  SLOW_TEST_SECONDS: ${{ github.event.inputs.slow_test_seconds || '0' }}
+
+jobs:
+  lint:
+    name: Lint (ruff)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python (com cache)
+        if: env.USE_CACHE == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Setup Python (sem cache)
+        if: env.USE_CACHE != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Run ruff (lint / análise estática)
+        run: ruff check .
+
+  test:
+    name: Tests (pytest)
+    runs-on: ubuntu-latest
+    # ORDEM DOS JOBS — variação de configuração:
+    #  * SEQUENCIAL (padrão): mantenha a linha `needs: lint` abaixo.
+    #  * PARALELO: comente/remova `needs: lint` num commit para que os jobs rodem juntos.
+    needs: lint
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python (com cache)
+        if: env.USE_CACHE == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Setup Python (sem cache)
+        if: env.USE_CACHE != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Run tests (pytest + JUnit + coverage)
+        run: |
+          mkdir -p reports
+          pytest \
+            --junitxml=reports/junit.xml \
+            --cov=app --cov-report=xml:reports/coverage.xml
+
+      - name: Generate test summary (fallback)
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, xml.etree.ElementTree as ET, pathlib
+          p = pathlib.Path("reports/junit.xml")
+          summary = {"tests": 0, "failures": 0, "errors": 0, "skipped": 0, "time": 0.0}
+          if p.exists():
+              root = ET.parse(p).getroot()
+              suites = root.findall("testsuite") or ([root] if root.tag == "testsuite" else [])
+              for s in suites:
+                  for k in ("tests", "failures", "errors", "skipped"):
+                      summary[k] += int(s.get(k, 0))
+                  summary["time"] += float(s.get("time", 0))
+          pathlib.Path("reports/test-summary.json").write_text(json.dumps(summary, indent=2))
+          print(summary)
+          PY
+
+      - name: Upload artifact (reports)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports-${{ github.run_id }}-${{ github.run_attempt }}
+          path: reports/
+          retention-days: 30

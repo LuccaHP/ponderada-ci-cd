@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Testes / cobertura
+.pytest_cache/
+.coverage
+coverage.xml
+
+# Artefatos de teste gerados localmente (no CI vão para artifacts)
+reports/
+
+# Ferramentas
+.ruff_cache/
+
+# Segredos — NUNCA commitar tokens
+.env
+
+# Sistema
+.DS_Store
