@@ -73,7 +73,7 @@ jobs:
     # ORDEM DOS JOBS — variação de configuração:
     #  * SEQUENCIAL (padrão): mantenha a linha `needs: lint` abaixo.
     #  * PARALELO: comente/remova `needs: lint` num commit para que os jobs rodem juntos.
-    needs: lint
+    # needs: lint   # exp: PARALELO — jobs lint e test rodam simultaneamente
     steps:
       - name: Checkout
         uses: actions/checkout@v4
