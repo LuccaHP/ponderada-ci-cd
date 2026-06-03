@@ -21,7 +21,7 @@ def test_create_todo(client: TestClient) -> None:
     resp = client.post("/todos", json={"title": "Estudar CI/CD"})
     assert resp.status_code == 201
     body = resp.json()
-    assert body["id"] == 1
+    assert body["id"] == 999  # exp: valor incorreto de propósito (teste falhando)
     assert body["title"] == "Estudar CI/CD"
     assert body["done"] is False
 
