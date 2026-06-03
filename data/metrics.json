@@ -1,0 +1,1822 @@
+[
+  {
+    "run_id": 26891056200,
+    "commit_sha": "c2d6821162459ddcf97153f363aee2e607aab8f0",
+    "commit_message": "exp: corrige falha de lint (remove import nao utilizado)",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 68.0,
+    "lead_time": 68.0,
+    "timestamp": "2026-06-03T14:21:41Z",
+    "test_metrics": {
+      "test_count": 29,
+      "test_failures": 0,
+      "test_time_avg": 0.0093
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 23.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 18.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 26.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 17.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26891050983,
+    "commit_sha": "c2d6821162459ddcf97153f363aee2e607aab8f0",
+    "commit_message": "exp: corrige falha de lint (remove import nao utilizado)",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 72.0,
+    "lead_time": 72.0,
+    "timestamp": "2026-06-03T14:21:35Z",
+    "test_metrics": {
+      "test_count": 29,
+      "test_failures": 0,
+      "test_time_avg": 0.0075
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 26.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 18.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 29.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 4.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 15.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26891045723,
+    "commit_sha": "c2d6821162459ddcf97153f363aee2e607aab8f0",
+    "commit_message": "exp: corrige falha de lint (remove import nao utilizado)",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 69.0,
+    "lead_time": 69.0,
+    "timestamp": "2026-06-03T14:21:30Z",
+    "test_metrics": {
+      "test_count": 29,
+      "test_failures": 0,
+      "test_time_avg": 0.0093
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 23.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 19.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (sem cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 28.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 20.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 3.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Setup Python (sem cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26891040992,
+    "commit_sha": "c2d6821162459ddcf97153f363aee2e607aab8f0",
+    "commit_message": "exp: corrige falha de lint (remove import nao utilizado)",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 91.0,
+    "lead_time": 91.0,
+    "timestamp": "2026-06-03T14:21:26Z",
+    "test_metrics": {
+      "test_count": 29,
+      "test_failures": 0,
+      "test_time_avg": 0.6993
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 25.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 3.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 17.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 52.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 4.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 19.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 22.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26891036184,
+    "commit_sha": "c2d6821162459ddcf97153f363aee2e607aab8f0",
+    "commit_message": "exp: corrige falha de lint (remove import nao utilizado)",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 69.0,
+    "lead_time": 69.0,
+    "timestamp": "2026-06-03T14:21:21Z",
+    "test_metrics": {
+      "test_count": 228,
+      "test_failures": 0,
+      "test_time_avg": 0.0024
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 26.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 18.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 30.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 3.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 18.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 3.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26891030553,
+    "commit_sha": "c2d6821162459ddcf97153f363aee2e607aab8f0",
+    "commit_message": "exp: corrige falha de lint (remove import nao utilizado)",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 62.0,
+    "lead_time": 62.0,
+    "timestamp": "2026-06-03T14:21:15Z",
+    "test_metrics": {
+      "test_count": 78,
+      "test_failures": 0,
+      "test_time_avg": 0.0041
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 23.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 17.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 29.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 18.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 3.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26891025238,
+    "commit_sha": "c2d6821162459ddcf97153f363aee2e607aab8f0",
+    "commit_message": "exp: corrige falha de lint (remove import nao utilizado)",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 66.0,
+    "lead_time": 66.0,
+    "timestamp": "2026-06-03T14:21:10Z",
+    "test_metrics": {
+      "test_count": 29,
+      "test_failures": 0,
+      "test_time_avg": 0.0097
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 24.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 18.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 31.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 3.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 18.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26890944036,
+    "commit_sha": "c2d6821162459ddcf97153f363aee2e607aab8f0",
+    "commit_message": "exp: corrige falha de lint (remove import nao utilizado)",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 59.0,
+    "lead_time": 59.0,
+    "timestamp": "2026-06-03T14:19:48Z",
+    "test_metrics": {
+      "test_count": 29,
+      "test_failures": 0,
+      "test_time_avg": 0.0085
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 26.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 3.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 17.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 26.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 16.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26890931701,
+    "commit_sha": "3bc82f54be685e43516a8d746efb94569ea7e37d",
+    "commit_message": "exp: introduz falha de lint (import os nao utilizado)",
+    "status": "completed",
+    "conclusion": "failure",
+    "run_attempt": 1,
+    "workflow_duration": 27.0,
+    "lead_time": 27.0,
+    "timestamp": "2026-06-03T14:19:36Z",
+    "test_metrics": {
+      "test_count": null,
+      "test_failures": null,
+      "test_time_avg": null
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "failure",
+        "duration": 23.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 17.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "failure",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "skipped",
+        "duration": -1.0,
+        "steps": []
+      }
+    ]
+  },
+  {
+    "run_id": 26890897851,
+    "commit_sha": "a7b8e785dd82ca92fb7a181ed4c90bf12a6c030f",
+    "commit_message": "exp: jobs SEQUENCIAIS (restaura needs: lint no job test)",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 56.0,
+    "lead_time": 56.0,
+    "timestamp": "2026-06-03T14:19:02Z",
+    "test_metrics": {
+      "test_count": 29,
+      "test_failures": 0,
+      "test_time_avg": 0.0092
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 24.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 3.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 17.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 26.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 17.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26890855354,
+    "commit_sha": "e1401b2ffd7dc91b2e6482af336ba3f1f280b6e7",
+    "commit_message": "exp: jobs em PARALELO (remove needs: lint do job test)",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 35.0,
+    "lead_time": 35.0,
+    "timestamp": "2026-06-03T14:18:20Z",
+    "test_metrics": {
+      "test_count": 29,
+      "test_failures": 0,
+      "test_time_avg": 0.0094
+    },
+    "jobs": [
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 31.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 4.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 17.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 26.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 3.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 18.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26890837079,
+    "commit_sha": "7ca57f2453e9570f23913f75dfe5086d68c004ac",
+    "commit_message": "exp: corrige teste que estava falhando (volta ao verde)",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 75.0,
+    "lead_time": 75.0,
+    "timestamp": "2026-06-03T14:18:03Z",
+    "test_metrics": {
+      "test_count": 29,
+      "test_failures": 0,
+      "test_time_avg": 0.0072
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 26.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 4.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 16.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 28.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 4.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 14.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26890737315,
+    "commit_sha": "aadf19b2a75a4fa051549c9521db994b21206541",
+    "commit_message": "exp: introduz teste falhando (id esperado incorreto)",
+    "status": "completed",
+    "conclusion": "failure",
+    "run_attempt": 1,
+    "workflow_duration": 59.0,
+    "lead_time": 59.0,
+    "timestamp": "2026-06-03T14:16:23Z",
+    "test_metrics": {
+      "test_count": 29,
+      "test_failures": 1,
+      "test_time_avg": 0.0099
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 24.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 18.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "failure",
+        "duration": 27.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 3.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 16.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "failure",
+            "duration": 2.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run_id": 26890458786,
+    "commit_sha": "4fb6f7409a5fbd67d05292eca8ac1c36e4c47f1a",
+    "commit_message": "feat: adiciona projeto base e ci/cd",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "workflow_duration": 62.0,
+    "lead_time": 62.0,
+    "timestamp": "2026-06-03T14:11:41Z",
+    "test_metrics": {
+      "test_count": 29,
+      "test_failures": 0,
+      "test_time_avg": 0.0071
+    },
+    "jobs": [
+      {
+        "name": "Lint (ruff)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 26.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 17.0
+          },
+          {
+            "name": "Run ruff (lint / análise estática)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 3.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      },
+      {
+        "name": "Tests (pytest)",
+        "status": "completed",
+        "conclusion": "success",
+        "duration": 28.0,
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Checkout",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Setup Python (sem cache)",
+            "conclusion": "skipped",
+            "duration": 0.0
+          },
+          {
+            "name": "Install dependencies",
+            "conclusion": "success",
+            "duration": 16.0
+          },
+          {
+            "name": "Run tests (pytest + JUnit + coverage)",
+            "conclusion": "success",
+            "duration": 2.0
+          },
+          {
+            "name": "Generate test summary (fallback)",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Upload artifact (reports)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Setup Python (com cache)",
+            "conclusion": "success",
+            "duration": 1.0
+          },
+          {
+            "name": "Post Checkout",
+            "conclusion": "success",
+            "duration": 0.0
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success",
+            "duration": 0.0
+          }
+        ]
+      }
+    ]
+  }
+]
